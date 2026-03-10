@@ -129,7 +129,7 @@ export default function App() {
           <button onClick={scrollToContact} className="px-8 py-3 rounded-xl bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-red-500/40 transition-transform duration-300">
             Hire Me
           </button>
-          <a href="#Project" className="px-8 py-3 rounded-xl border-2 border-gray-400 text-gray-700 font-semibold hover:border-red-500 hover:text-red-500 transition-all duration-300">
+          <a href="#project" className="px-8 py-3 rounded-xl border-2 border-gray-400 text-gray-700 font-semibold hover:border-red-500 hover:text-red-500 transition-all duration-300">
             View Work
           </a>
         </div>
@@ -157,10 +157,10 @@ export default function App() {
           <div className="space-y-6 text-center md:text-left">
             <h2 className="text-4xl md:text-5xl font-bold text-red-500">About Me</h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg mb-4">
-              I'm a passionate Graphic Designer and Visual Editor creating posters, banners, flyers, and video content for brands.
+              My name is Joshua Crausus, a passionate Graphic Designer and Visual Editor specializing in creating posters, flyers, banners, tarps, and other promotional materials. My career began with a love for visual arts and design, which developed into crafting eye-catching content for brands and businesses.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-              I aim to deliver designs that capture attention and communicate messages effectively.
+              My work combines creativity with strategic thinking, ensuring every project captures attention and delivers impact. I have hands-on experience in graphic design, creating professional visuals that resonate with audiences and elevate brand identity.
             </p>
             <button onClick={downloadPDF} className="inline-block px-8 py-3 rounded-xl bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold hover:scale-105 hover:shadow-lg hover:shadow-red-500/40 transition">
               Download CV
@@ -182,7 +182,7 @@ export default function App() {
       </section>
 
       {/* MY WORK */}
-      <section id="Project" className="max-w-6xl mx-auto px-6 py-24">
+      <section id="project" className="max-w-6xl mx-auto px-6 py-24">
         <h2 className="text-3xl font-bold text-red-500 text-center mb-12">My Work</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 auto-rows-auto">
           {projects.map((project, i) => (
