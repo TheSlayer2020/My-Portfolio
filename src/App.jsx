@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import jsPDF from "jspdf";
+import MyCV from "./assets/MY-CV.pdf";
 
 // Hero Portrait
 import ME from "./assets/ME.png";
@@ -31,9 +31,10 @@ export default function App() {
   };
 
   const downloadPDF = () => {
-    const doc = new jsPDF();
-    doc.text("Hello! This is my CV content.", 10, 10);
-    doc.save("MyCV.pdf");
+    const link = document.createElement("a");
+    link.href = MyCV;
+    link.download = "Joshua-Crausus-CV.pdf";
+    link.click();
   };
 
   // Arrays for dynamic rendering
